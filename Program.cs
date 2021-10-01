@@ -14,10 +14,10 @@ namespace ElectricityAccounting
             {
                 Electricity electricity = new Electricity();
 
-                Console.WriteLine("Flat number without electricity costs: " + electricity.flatNumberWithoutElectricityCosts()?? "none");
-                Console.WriteLine("Owner surname with max debt: " + electricity.ownerSurnameWithMaxDebt());
+                Console.WriteLine("Flat number without electricity costs: " + electricity.FlatNumberWithoutElectricityCosts()?? "none");
+                Console.WriteLine("Owner surname with max debt: " + electricity.OwnerSurnameWithMaxDebt());
 
-                Console.WriteLine(electricity.printReport());
+                Console.WriteLine(electricity.PrintReport());
             }
             catch(FileNotFoundException exception)
             {

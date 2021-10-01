@@ -75,7 +75,7 @@ namespace ElectricityAccounting
             }
         }
 
-        public string printReport()
+        public string PrintReport()
         {
             string output = "\nReport:\n";
 
@@ -85,7 +85,7 @@ namespace ElectricityAccounting
             return output;
         }
 
-        public string ownerSurnameWithMaxDebt()
+        public string OwnerSurnameWithMaxDebt()
         {
             int max = 0;
             string surname = "none";
@@ -100,7 +100,7 @@ namespace ElectricityAccounting
             return surname;
         }
 
-        public int? flatNumberWithoutElectricityCosts()
+        public int? FlatNumberWithoutElectricityCosts()
         {
             foreach (var elem in FlatAccountList)
                 if (elem.MeterReadingList[FlatAccount.MONTH_COUNT - 1] == elem.MeterReadingList[0])
